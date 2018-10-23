@@ -1,0 +1,24 @@
+<!-- 
+Data Definition for your custom section.
+
+Save this Data Definition in a container called Custom Sections, without
+the .xml extension.
+-->
+
+<system-data-structure>
+    <!-- 
+    The `format` field is required in all custom section Data Definitions. 
+    
+    Replace the value of the `default` attribute with the full path to your
+    custom section's Velocity format. Don't edit the other attributes.
+    -->
+    <text 
+        default="site://YOUR-WCMS-SITE.siteName/_internal/velocity/Page/Custom Sections/Custom Section Name" 
+        identifier="format" 
+        label="Path to format" 
+        required="true" 
+        restrict-to-groups="HIDDEN">
+
+    <!-- Your custom section's Data Definition fields, visible to content creators. -->
+    <text identifier="example-field" label="An example field">
+</system-data-structure>
