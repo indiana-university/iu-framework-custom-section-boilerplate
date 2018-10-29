@@ -1,13 +1,18 @@
 ## Velocity format for your custom section.
-## Save this file to _internal/velocity/Page/Custom Sections, without the .vm extension.
+## Save this file to `_internal/velocity/Page/Custom Sections`, 
+##  without the `.vm` extension.
 
 #macro(CustomSectionName $block $blockXml)
-    #set($sectionXml = $_XPathTool.selectSingleNode($blockXml, "content/system-data-structure"))
-
     <div class="bg-none section">
         <div class="row">
             <div class="layout">
-                <!-- Your section format goes here. -->
+                <!-- 
+                Your custom section's format goes here.
+                
+                The `$blockXml` parameter contains your custom section's 
+                XML content that can be traversed with `.getChild()` and 
+                `.getChildren()` or queried with the `$_XPathTool`.
+                -->
             </div>
         </div>
     </div>

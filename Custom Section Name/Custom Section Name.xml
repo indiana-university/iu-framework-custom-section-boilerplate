@@ -1,8 +1,8 @@
 <!-- 
 Data Definition for your custom section.
 
-Save this Data Definition in a container called Custom Sections, without
-the .xml extension.
+Save this Data Definition in a container called `Custom Sections`, without
+the `.xml` extension.
 -->
 
 <system-data-structure>
