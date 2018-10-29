@@ -1,7 +1,7 @@
-## Velocity format for your custom section. Do not rename the `main` macro.
+## Velocity format for your custom section.
 ## Save this file to _internal/velocity/Page/Custom Sections, without the .vm extension.
 
-#macro(main $blockSite $blockPath $blockXml)
+#macro(CustomSectionName $block $blockXml)
     #set($sectionXml = $_XPathTool.selectSingleNode($blockXml, "content/system-data-structure"))
 
     <div class="bg-none section">

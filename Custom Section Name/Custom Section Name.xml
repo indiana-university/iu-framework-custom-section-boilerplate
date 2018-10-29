@@ -6,11 +6,18 @@ the .xml extension.
 -->
 
 <system-data-structure>
+
     <!-- 
-    The `format` field is required in all custom section Data Definitions. 
+    The `format` and `entryPoint` fields are required in all custom section 
+    Data Definitions. 
     
-    Replace the value of the `default` attribute with the full path to your
-    custom section's Velocity format. Don't edit the other attributes.
+    Replace the value of the `format` field's `default` attribute with the 
+    full path to your custom section's Velocity format. Don't edit the 
+    other attributes.
+
+    Replace the value of the `entryPoint` field's `default` attribute with
+    the name of the macro in your custom section's Velocity format that you
+    want to execute when the custom section is rendered on a page.    
     -->
     <text 
         default="site://YOUR-WCMS-SITE.siteName/_internal/velocity/Page/Custom Sections/Custom Section Name" 
@@ -18,7 +25,18 @@ the .xml extension.
         label="Path to format" 
         required="true" 
         restrict-to-groups="HIDDEN">
+    
+    <text 
+        default="CustomSectionName" 
+        identifier="entryPoint" 
+        label="Name of entry point macro" 
+        required="true" 
+        restrict-to-groups="HIDDEN">
 
     <!-- Your custom section's Data Definition fields, visible to content creators. -->
-    <text identifier="example-field" label="An example field">
+    <text 
+        identifier="example-field" 
+        label="An example field"
+        required="true">
+
 </system-data-structure>
