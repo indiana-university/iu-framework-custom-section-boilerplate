@@ -7,7 +7,7 @@ A collection of starter files for creating custom sections to be used with the [
 The IU Web Framework custom section boilerplate contains 3 files:
 
 - A [starter XML file](https://github.com/indiana-university/iu-framework-custom-section-boilerplate/blob/master/Custom%20Section%20Name/Custom%20Section%20Name.xml) you can use to create your custom section's [Data Definition](https://www.hannonhill.com/cascadecms/latest/design-in-cascade/data-definitions/index.html).
-- : A [starter Velocity format](https://github.com/indiana-university/iu-framework-custom-section-boilerplate/blob/master/Custom%20Section%20Name/Custom%20Section%20Name.vm) you can use to [define how your custom section's content should be displayed](https://www.hannonhill.com/cascadecms/latest/developing-in-cascade/script-formats/index.html) on a web page.
+- A [starter Velocity format](https://github.com/indiana-university/iu-framework-custom-section-boilerplate/blob/master/Custom%20Section%20Name/Custom%20Section%20Name.vm) you can use to [define how your custom section's content should be displayed](https://www.hannonhill.com/cascadecms/latest/developing-in-cascade/script-formats/index.html) on a web page.
 - A [starter README](https://github.com/indiana-university/iu-framework-custom-section-boilerplate/blob/master/Custom%20Section%20Name/README.md) file you can use to document how your custom section works.
 
 ## Adding a custom section to an IU Web Framework site
