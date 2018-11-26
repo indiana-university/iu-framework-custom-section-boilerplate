@@ -1,8 +1,9 @@
 <!-- 
 Data Definition for your custom section.
 
-Save this Data Definition in a container called `Custom Sections`, without
-the `.xml` extension.
+Save this Data Definition in a container called `Custom Sections`.
+Use Title Case to name your Data Definition and don't include the 
+`.xml` extension.
 -->
 
 <system-data-structure>
@@ -20,7 +21,7 @@ the `.xml` extension.
     want to execute when the custom section is rendered on a page.    
     -->
     <text 
-        default="site://YOUR-WCMS-SITE.siteName/_internal/velocity/Page/Custom Sections/Custom Section Name" 
+        default="site://YOUR-WCMS-SITE.siteName/_internal/velocity/custom-sections/custom-section-name" 
         identifier="format" 
         label="Path to format" 
         required="true" 

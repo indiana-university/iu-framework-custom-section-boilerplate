@@ -1,0 +1,84 @@
+## Velocity format for your custom section.
+
+## Save this file to `_internal/velocity/custom-sections`. 
+## Use kebab-case to name your Velocity format file and don't include 
+## the `.vm` extension.
+
+#macro(CustomSectionName $block)
+    <!-- 
+    The following two lines parse your custom section's XML into a
+    `$___Block` object you can use to access Data Definition field 
+    values using dot (.) notation (see below).
+    -->
+    #import('site://IU-FRAME-WEBS.main/velocity/1.x/Parser')
+    #set($nil = '#___ParseBlock($block.path, $block.siteName)')
+
+    <!-- 
+    Your custom section macro inherits the `$sectionClasses` and 
+    `$sectionID` variables that contain the CSS classes and in-page 
+    navigation ID specified by the page's builder in Section > Details.
+    -->
+    <div class="$sectionClasses" id="$sectionID">
+        <div class="row">
+            <div class="layout">
+                <!-- 
+                Your custom section's format goes here.
+                
+                The `$___Block` object contains your custom section's 
+                XML content that can be traversed using dot (.) notation 
+                instead of .getChild(), .getChildren(), or the $_XPathTool.
+
+                For example, if your Data Definition were structured like this:
+
+                <system-data-structure>
+                    <group identifier="name">
+                        <text identifier="first">
+                        <text identifier="last">
+                    </group>
+                    <text identifier="email">
+                    <group identifier="interests">
+                        <text identifier="interest" multiple="true">
+                    </group>
+                </system-data-structure>
+
+                You could access the field values like this:
+
+                #set($email = $___Block.email[0])
+                #set($firstName = $___Block.name.first[0])
+
+                #foreach($interest in $___Block.interests)
+                    $interest[0]
+                #end
+                -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    Links to your custom section's CSS files go here, if you have any. 
+    
+    You can reference CSS files using either absolute or relative paths.
+    -->
+    <include action="hide" name="custom-css">
+        <link rel="stylesheet" src="https://site.indiana.edu/css/some-file.css"/>
+        <link rel="stylesheet" src="/_assets/css/custom-section-name.css"/>
+    </include>
+
+    <!-- 
+    Links to your custom section's JS files go here, if you have any. 
+    
+    You can reference JS files using either absolute or relative paths.
+    -->
+    <include action="hide" name="custom-js">
+        <script src="https://site.indiana.edu/js/some-file.js"></script>
+        <script src="/_assets/js/custom-section-name.js"></script>
+    </include>
+#end
+
+## You can use the code below to test your custom section's 
+## Velocity format in Cascade Server's Velocity format editor. 
+## Be sure to comment this code out or remove it before publishing 
+## any pages that contain your custom section.
+
+#set($block = $_.locateBlock('/path/to/block'))
+#CustomSectionName($block)
