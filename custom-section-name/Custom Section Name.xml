@@ -1,14 +1,12 @@
-<!-- 
-Data Definition for your custom section.
-
-Save this Data Definition in a container called `Custom Sections`.
-Use Title Case to name your Data Definition and don't include the 
-`.xml` extension.
--->
-
 <system-data-structure>
 
     <!-- 
+    Data Definition for your custom section.
+
+    Save this Data Definition in a container called `Custom Sections`.
+    Use Title Case to name your Data Definition and don't include the 
+    `.xml` extension.
+
     The `format` and `entryPoint` fields are required in all custom section 
     Data Definitions. 
     
@@ -25,19 +23,19 @@ Use Title Case to name your Data Definition and don't include the
         identifier="format" 
         label="Path to format" 
         required="true" 
-        restrict-to-groups="HIDDEN">
+        restrict-to-groups="HIDDEN"/>
     
     <text 
         default="CustomSectionName" 
         identifier="entryPoint" 
         label="Name of entry point macro" 
         required="true" 
-        restrict-to-groups="HIDDEN">
+        restrict-to-groups="HIDDEN"/>
 
     <!-- Your custom section's Data Definition fields, visible to content creators. -->
     <text 
         identifier="example-field" 
         label="An example field"
-        required="true">
+        required="true"/>
 
 </system-data-structure>
