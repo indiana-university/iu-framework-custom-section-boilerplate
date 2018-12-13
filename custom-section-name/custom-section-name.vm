@@ -32,22 +32,29 @@
 
                 <system-data-structure>
                     <group identifier="name">
-                        <text identifier="first">
-                        <text identifier="last">
+                        <text identifier="first"/>
+                        <text identifier="last"/>
                     </group>
-                    <text identifier="email">
+                    <text identifier="email"/>
+                    <text identifier="title" multiple="true"/>
                     <group identifier="interests">
-                        <text identifier="interest" multiple="true">
+                        <text identifier="interest" multiple="true"/>
                     </group>
+                    <asset identifier="picture" type="file"/>
                 </system-data-structure>
 
                 You could access the field values like this:
 
                 #set($email = $___Block.email[0])
-                #set($firstName = $___Block.name.first[0])
+                #set($firstName = $___Block.name[0].first[0])
+                #set($picture = $___Block.picture[0].path)
+
+                #foreach($title in $___Block.title)
+                    $title
+                #end
 
                 #foreach($interest in $___Block.interests)
-                    $interest[0]
+                    $interest
                 #end
                 -->
             </div>
