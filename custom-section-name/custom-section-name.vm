@@ -56,7 +56,7 @@
                     $title
                 #end
 
-                #foreach($interest in $___Block.interests)
+                #foreach($interest in $___Block.interests[0].interest)
                     $interest
                 #end
                 -->
