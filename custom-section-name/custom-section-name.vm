@@ -39,6 +39,7 @@
                         <text identifier="last"/>
                     </group>
                     <text identifier="email"/>
+                    <text identifier="birthday" type="calendar"/>
                     <text identifier="title" multiple="true"/>
                     <group identifier="interests">
                         <text identifier="interest" multiple="true"/>
@@ -50,6 +51,7 @@
 
                 #set($email = $___Block.email[0])
                 #set($firstName = $___Block.name[0].first[0])
+                #set($birthday = $___Block.birthday[0].prettyDate)
                 #set($picture = $___Block.picture[0].path)
 
                 #foreach($title in $___Block.title)
