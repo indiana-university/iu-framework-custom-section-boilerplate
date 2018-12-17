@@ -61,6 +61,8 @@
                 #foreach($interest in $___Block.interests[0].interest)
                     $interest
                 #end
+
+                For more, see https://developers.iu.edu/resources/iu-framework/velocity-parser/.
                 -->
             </div>
         </div>
