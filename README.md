@@ -12,4 +12,4 @@ The IU Web Framework custom section boilerplate contains 3 files:
 
 ## Adding a custom section to an IU Web Framework site
 
-See the IU Knowledgebase article on [adding custom sections to an IU Web Framework site](https://kb.iu.edu/xxxx).
+See the IU Knowledgebase article on [adding custom sections to an IU Web Framework site](https://developers.iu.edu/resources/iu-framework/creating-custom-sections/).
