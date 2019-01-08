@@ -4,7 +4,7 @@ Give people a short summary of your custom section.
 
 ## Adding this custom section to your IU Framework site
 
-If a developer needs to do anything beyond the [normal process for adding custom sections](https://kb.iu.edu/xxxx), explain the steps they need to take.
+If a developer needs to do anything beyond the [normal process for adding custom sections](https://developers.iu.edu/resources/iu-framework/adding-custom-sections/), explain the steps they need to take.
 
 ## Using this custom section
 
