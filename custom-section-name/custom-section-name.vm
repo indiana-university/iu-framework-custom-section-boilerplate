@@ -13,7 +13,7 @@
     `$___Block` object you can use to access Data Definition field 
     values using dot (.) notation (see below).
     -->
-    #import('site://IU-FRAME-WEBS.main/velocity/1.x/Parser')
+    #import('site://IU-FRAME-WEBS.common/velocity/1.x/Parser')
     #set($nil = '#___ParseBlock($block.path, $block.siteName)')
 
     <!-- 
