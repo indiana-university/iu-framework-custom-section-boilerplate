@@ -13,8 +13,8 @@
     `$___Block` object you can use to access Data Definition field 
     values using dot (.) notation (see below).
     -->
-    #import('site://IU-FRAME-WEBS.common/velocity/1.x/Parser')
-    #set($nil = '#___ParseBlock($block.path, $block.siteName)')
+    #import("site://IU-FRAME-WEBS.common/velocity/1.x/Parser")
+    #set($nil = "#___ParseBlock($block.path, $block.siteName)")
 
     <!-- 
     Your custom section macro inherits the `$sectionClasses` and 
@@ -94,5 +94,5 @@
 ## Be sure to comment this code out or remove it before publishing 
 ## any pages that contain your custom section.
 
-#set($block = $_.locateBlock('/path/to/block'))
+#set($block = $_.locateBlock("/path/to/block"))
 #CustomSectionName($block)
