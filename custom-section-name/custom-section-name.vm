@@ -51,7 +51,7 @@
 
                 #set($email = $___Block.email[0])
                 #set($firstName = $___Block.name[0].first[0])
-                #set($birthday = $___Block.birthday[0].prettyDate)
+                #set($birthday = $___Block.birthday[0].prettyDate.full)
                 #set($picture = $___Block.picture[0].path)
 
                 #foreach($title in $___Block.title)
