@@ -74,8 +74,8 @@
     You can reference CSS files using either absolute or relative paths.
     -->
     <include action="hide" name="custom-css">
-        <link rel="stylesheet" src="https://site.indiana.edu/css/some-file.css"/>
-        <link rel="stylesheet" src="/_assets/css/custom-section-name.css"/>
+        <link rel="stylesheet" href="https://site.indiana.edu/css/some-file.css"/>
+        <link rel="stylesheet" href="/_assets/css/custom-section-name.css"/>
     </include>
 
     <!-- 
